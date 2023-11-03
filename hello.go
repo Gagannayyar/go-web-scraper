@@ -1,18 +1,12 @@
 package main
 
-import "fmt"
-
-func sum(nums ...int) {
-	total := 0
-
-	for _, num := range nums {
-		total += num
-	}
-
-	fmt.Println(total)
-}
+import "log"
 
 func main() {
-	sum(1,2,3,4)
 
+	var line string = "Once"
+
+	for i, l := range line {
+		log.Println(i, l)
+	}
 }
